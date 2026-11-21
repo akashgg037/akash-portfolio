@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Flutter / Dart
+**/doc/api/
+**/.dart_tool/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/.pub-cache/
+**/.pub/
+**/build/
+!portfolio/
+!flutter_portfolio/build/web/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# Vercel
+.vercel

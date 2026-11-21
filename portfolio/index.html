@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akash Gupta | Senior Flutter Engineer & IoT Architect</title>
+  <meta name="description" content="Portfolio of Akash Gupta - Senior Flutter Developer, Mobile Architect, and IoT Specialist with 4+ years of cross-platform engineering experience." />
+
+  <!-- Premium Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="theme-light">
+  <!-- Subtle Background Grid Pattern -->
+  <div class="bg-grid-pattern"></div>
+
+  <!-- Sleek Floating Header -->
+  <header class="header-wrapper">
+    <div class="header-container">
+      <a href="#hero" class="brand-group">
+        <div class="brand-avatar">AG</div>
+        <div class="brand-text">
+          <span class="brand-name">Akash Gupta</span>
+          <span class="brand-role">Flutter &bull; IoT &bull; QA Lead</span>
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#about" class="nav-item">About</a>
+        <a href="#expertise" class="nav-item">Expertise</a>
+        <a href="#projects" class="nav-item">Case Studies</a>
+        <a href="#career" class="nav-item">Experience</a>
+        <a href="#contact" class="nav-item">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Palette Switcher -->
+        <button class="theme-btn" id="themeBtn" title="Switch Theme">
+          <i class="fa-regular fa-moon" id="themeIcon"></i>
+        </button>
+
+        <a href="Akash_Gupta_Resume.pdf" target="_blank" class="btn btn-outline btn-sm">
+          <i class="fa-regular fa-file-pdf"></i> Resume
+        </a>
+
+        <a href="#contact" class="btn btn-primary btn-sm">
+          Hire / Connect
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <!-- 1. HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <!-- Left: Pitch & Bio -->
+        <div class="hero-text-col">
+          <div class="eyebrow-pill">
+            <span class="pulse-dot"></span>
+            <span>Available for Senior Flutter & Mobile QA Roles</span>
+          </div>
+
+          <h1 class="hero-title">
+            Architecting <span class="highlight-text">Production Flutter Apps</span> & Connected IoT Systems.
+          </h1>
+
+          <p class="hero-subtext">
+            I am a mobile application engineer with <strong>4+ years of cross-platform delivery</strong>. 
+            I build responsive, deterministic iOS, Android, and Web applications using <strong>Flutter, Dart, and FlutterFlow</strong>, 
+            bridging physical hardware protocols (<strong>BLE, Wi-Fi, MQTT</strong>) and enterprise AWS backends.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-layer-group"></i> Explore Case Studies
+            </a>
+            <a href="Akash_Gupta_Resume.pdf" target="_blank" class="btn btn-secondary">
+              <i class="fa-solid fa-arrow-down"></i> Download Resume
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fa-regular fa-envelope"></i> Get in Touch
+            </a>
+          </div>
+
+          <div class="hero-social-strip">
+            <a href="https://linkedin.com/in/akash-gupta" target="_blank" rel="noopener noreferrer" class="social-chip" title="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+              <span>linkedin.com/in/akash-gupta</span>
+            </a>
+            <a href="mailto:akashg092@gmail.com" class="social-chip" title="Email">
+              <i class="fa-regular fa-envelope"></i>
+              <span>akashg092@gmail.com</span>
+            </a>
+            <a href="tel:+918839706795" class="social-chip" title="Phone">
+              <i class="fa-solid fa-phone"></i>
+              <span>+91 8839706795</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Professional Device & Telemetry Card -->
+        <div class="hero-widget-col">
+          <div class="telemetry-card">
+            <div class="telemetry-header">
+              <div class="card-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <span class="telemetry-title">system_telemetry.dart</span>
+              <span class="status-chip live"><i class="fa-solid fa-circle-check"></i> System Online</span>
+            </div>
+
+            <div class="telemetry-body">
+              <!-- Node 1: Architecture -->
+              <div class="telemetry-node">
+                <div class="node-icon flutter"><i class="fa-solid fa-mobile-screen"></i></div>
+                <div class="node-content">
+                  <div class="node-title">Application Layer</div>
+                  <div class="node-meta">Flutter 3.x &bull; Dart &bull; Riverpod / Bloc State</div>
+                </div>
+                <div class="node-status text-emerald">Production Ready</div>
+              </div>
+
+              <!-- Node 2: IoT Protocol -->
+              <div class="telemetry-node">
+                <div class="node-icon iot"><i class="fa-solid fa-microchip"></i></div>
+                <div class="node-content">
+                  <div class="node-title">Hardware Connectivity</div>
+                  <div class="node-meta">BLE 5.0 &bull; MQTT Broker &bull; Wi-Fi Provisioning</div>
+                </div>
+                <div class="node-status text-cyan">&lt; 40ms Latency</div>
+              </div>
+
+              <!-- Node 3: Cloud & Services -->
+              <div class="telemetry-node">
+                <div class="node-icon aws"><i class="fa-solid fa-cloud"></i></div>
+                <div class="node-content">
+                  <div class="node-title">Cloud Infrastructure</div>
+                  <div class="node-meta">AWS EC2 (Ubuntu Linux) &bull; S3 &bull; REST APIs</div>
+                </div>
+                <div class="node-status text-emerald">99.9% Uptime</div>
+              </div>
+
+              <!-- Node 4: QA Gate -->
+              <div class="telemetry-node">
+                <div class="node-icon qa"><i class="fa-solid fa-shield-halved"></i></div>
+                <div class="node-content">
+                  <div class="node-title">Quality Assurance</div>
+                  <div class="node-meta">Functional, API & Regression Protocols (Zoho / JIRA)</div>
+                </div>
+                <div class="node-status text-emerald">Zero-Defect Goal</div>
+              </div>
+            </div>
+
+            <div class="telemetry-footer">
+              <div class="stat-mini">
+                <span class="stat-mini-val">4+ Yrs</span>
+                <span class="stat-mini-lbl">Software Exp</span>
+              </div>
+              <div class="stat-mini-divider"></div>
+              <div class="stat-mini">
+                <span class="stat-mini-val">10+ Apps</span>
+                <span class="stat-mini-lbl">Delivered</span>
+              </div>
+              <div class="stat-mini-divider"></div>
+              <div class="stat-mini">
+                <span class="stat-mini-val">100%</span>
+                <span class="stat-mini-lbl">Full-Cycle QA</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. METRICS STATS RIBBON -->
+    <section class="stats-ribbon-section">
+      <div class="container">
+        <div class="stats-ribbon">
+          <div class="stat-item">
+            <div class="stat-icon-wrap"><i class="fa-solid fa-code-branch"></i></div>
+            <div class="stat-data">
+              <span class="stat-num">4+ Years</span>
+              <span class="stat-desc">Mobile Development & QA</span>
+            </div>
+          </div>
+          <div class="stat-divider"></div>
+
+          <div class="stat-item">
+            <div class="stat-icon-wrap"><i class="fa-solid fa-cubes"></i></div>
+            <div class="stat-data">
+              <span class="stat-num">10+ Products</span>
+              <span class="stat-desc">Commercial Apps Deployed</span>
+            </div>
+          </div>
+          <div class="stat-divider"></div>
+
+          <div class="stat-item">
+            <div class="stat-icon-wrap"><i class="fa-solid fa-tower-broadcast"></i></div>
+            <div class="stat-data">
+              <span class="stat-num">IoT Protocols</span>
+              <span class="stat-desc">BLE, Wi-Fi & MQTT Hardware</span>
+            </div>
+          </div>
+          <div class="stat-divider"></div>
+
+          <div class="stat-item">
+            <div class="stat-icon-wrap"><i class="fa-solid fa-check-double"></i></div>
+            <div class="stat-data">
+              <span class="stat-num">End-to-End</span>
+              <span class="stat-desc">Requirements to AWS Cutover</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. ABOUT SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-tag-group">
+          <span class="section-badge">OVERVIEW</span>
+          <h2 class="section-heading">Engineering Discipline Meets Modern Mobile UX</h2>
+          <p class="section-intro">
+            A comprehensive profile bridging cross-platform mobile development, hardware IoT integrations, and lead QA analysis.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Text Narrative -->
+          <div class="about-narrative">
+            <p class="narrative-lead">
+              I am a Lead QA Analyst & Flutter Developer at <strong>Dream Filler Software Solutions</strong>, specializing in turning ambitious software requirements into production-ready cross-platform systems.
+            </p>
+            <p>
+              My expertise covers the complete application lifecycle: translating UI/UX designs into fluid Flutter and FlutterFlow frontends, establishing deterministic state management, and interfacing directly with hardware devices via <strong>Bluetooth Low Energy (BLE)</strong>, <strong>Wi-Fi provisioning</strong>, and <strong>MQTT messaging</strong>.
+            </p>
+            <p>
+              Prior to software development, 7 years managing large-scale solar infrastructure projects at <strong>Madhav Infra Project Ltd.</strong> instilled in me an unyielding standard for technical compliance, deadline delivery, and risk mitigation that shapes every software release I oversee today.
+            </p>
+
+            <div class="strengths-grid">
+              <div class="strength-card">
+                <div class="strength-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                <div>
+                  <h4>Cross-Platform Mastery</h4>
+                  <p>Single codebase delivering unified native performance across iOS, Android, and Web.</p>
+                </div>
+              </div>
+              <div class="strength-card">
+                <div class="strength-icon"><i class="fa-solid fa-wifi"></i></div>
+                <div>
+                  <h4>IoT & Protocol Sync</h4>
+                  <p>Fast device onboarding with offline fallback, real-time telemetry, and voice assistant integration.</p>
+                </div>
+              </div>
+              <div class="strength-card">
+                <div class="strength-icon"><i class="fa-solid fa-vial-circle-check"></i></div>
+                <div>
+                  <h4>Proactive QA Governance</h4>
+                  <p>Comprehensive functional, API, regression, and load testing that catches defects prior to rollout.</p>
+                </div>
+              </div>
+              <div class="strength-card">
+                <div class="strength-icon"><i class="fa-solid fa-server"></i></div>
+                <div>
+                  <h4>Cloud & Infrastructure</h4>
+                  <p>Hands-on server migrations, AWS EC2 / S3 setups, and Linux deployment workflows.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Profile Snapshot Card -->
+          <div class="about-profile-card">
+            <div class="card-avatar-wrap">
+              <div class="profile-big-avatar">AG</div>
+              <div class="profile-title-block">
+                <h3>Akash Gupta</h3>
+                <span class="profile-subtitle">Lead QA Analyst & Flutter Developer</span>
+              </div>
+            </div>
+
+            <div class="profile-meta-list">
+              <div class="meta-row">
+                <span class="meta-lbl">Organization</span>
+                <span class="meta-val">Dream Filler Software Solutions Pvt. Ltd.</span>
+              </div>
+              <div class="meta-row">
+                <span class="meta-lbl">Location</span>
+                <span class="meta-val">Satna, Madhya Pradesh, India</span>
+              </div>
+              <div class="meta-row">
+                <span class="meta-lbl">Education</span>
+                <span class="meta-val">B.E. — LNCT Jabalpur (2010–2014)</span>
+              </div>
+              <div class="meta-row">
+                <span class="meta-lbl">Core Tech</span>
+                <span class="meta-val">Flutter, Dart, FlutterFlow, BLE, MQTT, AWS</span>
+              </div>
+              <div class="meta-row">
+                <span class="meta-lbl">Availability</span>
+                <span class="meta-val text-emerald"><i class="fa-solid fa-circle-check"></i> Open for Select Engagements</span>
+              </div>
+            </div>
+
+            <div class="profile-action-btn">
+              <a href="#contact" class="btn btn-primary btn-block">
+                <i class="fa-regular fa-paper-plane"></i> Discuss an Opportunity
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. TECHNICAL EXPERTISE SECTION -->
+    <section class="section expertise-section" id="expertise">
+      <div class="container">
+        <div class="section-tag-group">
+          <span class="section-badge">CORE CAPABILITIES</span>
+          <h2 class="section-heading">Technical Stack & Engineering Toolset</h2>
+          <p class="section-intro">
+            A balanced foundation spanning client UI engineering, embedded protocols, cloud services, and QA validation.
+          </p>
+        </div>
+
+        <div class="expertise-grid">
+          <!-- Card 1 -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="cat-icon flutter-icon"><i class="fa-solid fa-code"></i></div>
+              <div>
+                <h3>Mobile & Cross-Platform</h3>
+                <span class="cat-sub">Client UI & State Management</span>
+              </div>
+            </div>
+            <p class="cat-desc">Building responsive, fluid interfaces with native performance across iOS, Android, and Web platforms.</p>
+            <div class="skill-chips">
+              <span class="chip primary">Flutter</span>
+              <span class="chip primary">Dart</span>
+              <span class="chip primary">FlutterFlow</span>
+              <span class="chip">Responsive UI</span>
+              <span class="chip">State Management</span>
+              <span class="chip">Provider / Riverpod / Bloc</span>
+              <span class="chip">Flutter Web</span>
+              <span class="chip">Android & iOS Builds</span>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="cat-icon iot-icon"><i class="fa-solid fa-microchip"></i></div>
+              <div>
+                <h3>IoT & Hardware Connectivity</h3>
+                <span class="cat-sub">Embedded Sync & Telemetry</span>
+              </div>
+            </div>
+            <p class="cat-desc">Bridging smart physical devices, sensors, and voice ecosystems with mobile apps.</p>
+            <div class="skill-chips">
+              <span class="chip primary">Bluetooth Low Energy (BLE)</span>
+              <span class="chip primary">MQTT Protocol</span>
+              <span class="chip">Wi-Fi Provisioning</span>
+              <span class="chip">Device Onboarding</span>
+              <span class="chip">Smart Home (Alexa / Google)</span>
+              <span class="chip">RF Remote Sync</span>
+              <span class="chip">Offline Fallback Controls</span>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="cat-icon api-icon"><i class="fa-solid fa-plug"></i></div>
+              <div>
+                <h3>Integrations & Data Services</h3>
+                <span class="cat-sub">APIs, Gateways & Security</span>
+              </div>
+            </div>
+            <p class="cat-desc">Integrating high-volume transactional flows, payment gateways, and real-time broadcasts.</p>
+            <div class="skill-chips">
+              <span class="chip primary">RESTful APIs</span>
+              <span class="chip primary">Payment Gateways</span>
+              <span class="chip">Firebase FCM</span>
+              <span class="chip">Push Notifications</span>
+              <span class="chip">Real-Time WebSockets</span>
+              <span class="chip">GPS Geo-Fencing</span>
+              <span class="chip">Role-Based Access Control</span>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="cat-icon qa-icon"><i class="fa-solid fa-server"></i></div>
+              <div>
+                <h3>Cloud, QA & DevOps</h3>
+                <span class="cat-sub">Infrastructure & Verification</span>
+              </div>
+            </div>
+            <p class="cat-desc">Rigorous test execution frameworks coupled with cloud server provisioning and operational monitoring.</p>
+            <div class="skill-chips">
+              <span class="chip primary">AWS EC2 & S3</span>
+              <span class="chip primary">Ubuntu Linux</span>
+              <span class="chip">Postman API Testing</span>
+              <span class="chip">Functional & Regression QA</span>
+              <span class="chip">Zoho Bug Tracker</span>
+              <span class="chip">JIRA Workflows</span>
+              <span class="chip">Git / GitHub</span>
+              <span class="chip">Agile / Scrum</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. CASE STUDIES SECTION (Bento Grid Style) -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-tag-group">
+          <div class="projects-header-flex">
+            <div>
+              <span class="section-badge">CASE STUDIES</span>
+              <h2 class="section-heading">Featured Commercial Applications</h2>
+              <p class="section-intro">Selected products engineered for performance, operational scale, and hardware synchronization.</p>
+            </div>
+
+            <!-- Category Filters -->
+            <div class="filter-controls">
+              <button class="filter-btn active" data-filter="all">All</button>
+              <button class="filter-btn" data-filter="flutter">Flutter</button>
+              <button class="filter-btn" data-filter="iot">IoT & Hardware</button>
+              <button class="filter-btn" data-filter="flutterflow">FlutterFlow</button>
+              <button class="filter-btn" data-filter="qa">Cloud & QA</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="case-studies-grid" id="caseStudiesGrid">
+          <!-- Project 1: IoT BLDC Fan (Flagship) -->
+          <article class="case-card featured-card" data-category="flutter iot">
+            <div class="case-badge-row">
+              <span class="badge-cat iot"><i class="fa-solid fa-fan"></i> IoT & Smart Home</span>
+              <span class="badge-tech">Flutter &bull; BLE &bull; MQTT &bull; Wi-Fi</span>
+            </div>
+
+            <h3 class="case-card-title">IoT BLDC Fan & Smart Home Control Ecosystem</h3>
+            <p class="case-card-summary">
+              Cross-platform smart home control ecosystem for Android and Web. Enables low-latency BLE device discovery, Wi-Fi provisioning credentials handover, multi-speed fan regulation, dynamic mood lighting, and voice integration with Amazon Alexa and Google Home.
+            </p>
+
+            <div class="case-architecture-box">
+              <div class="arch-col">
+                <span class="arch-lbl">Hardware Handshake</span>
+                <span class="arch-val">Low-latency BLE Peripheral Pairing with Wi-Fi Credential Push</span>
+              </div>
+              <div class="arch-col">
+                <span class="arch-lbl">Cloud Broker</span>
+                <span class="arch-val">Bidirectional MQTT Telemetry & Status Sync</span>
+              </div>
+              <div class="arch-col">
+                <span class="arch-lbl">Resilience Feature</span>
+                <span class="arch-val">Automatic Offline Fallback when Internet is Disrupted</span>
+              </div>
+            </div>
+
+            <div class="case-card-tags">
+              <span>Flutter</span>
+              <span>Dart</span>
+              <span>BLE 5.0</span>
+              <span>MQTT</span>
+              <span>Wi-Fi Provisioning</span>
+              <span>Alexa</span>
+              <span>Google Home</span>
+            </div>
+          </article>
+
+          <!-- Project 2: School Management Platform -->
+          <article class="case-card" data-category="flutter">
+            <div class="case-badge-row">
+              <span class="badge-cat flutter"><i class="fa-solid fa-graduation-cap"></i> Enterprise EdTech</span>
+              <span class="badge-tech">Flutter &bull; RBAC &bull; FCM</span>
+            </div>
+
+            <h3 class="case-card-title">School Management & Student Portal</h3>
+            <p class="case-card-summary">
+              Multi-tier educational portal serving Administrators, Teachers, Students, and Parents. Delivers real-time attendance logging, dynamic timetable adjustments, digital gradebook distribution, and push announcements.
+            </p>
+
+            <div class="case-highlights-list">
+              <div class="hl-item"><i class="fa-solid fa-circle-check"></i> Strict 4-tier Role-Based Access Control (RBAC) safeguarding administrative records.</div>
+              <div class="hl-item"><i class="fa-solid fa-circle-check"></i> Dynamic exam timetable generator & report card distribution system.</div>
+              <div class="hl-item"><i class="fa-solid fa-circle-check"></i> Firebase Cloud Messaging (FCM) broadcast system for urgent campus alerts.</div>
+            </div>
+
+            <div class="case-card-tags">
+              <span>Flutter</span>
+              <span>REST APIs</span>
+              <span>RBAC Security</span>
+              <span>Firebase FCM</span>
+              <span>State Management</span>
+            </div>
+          </article>
+
+          <!-- Project 3: Core Desk Collaboration -->
+          <article class="case-card" data-category="flutter">
+            <div class="case-badge-row">
+              <span class="badge-cat flutter"><i class="fa-solid fa-briefcase"></i> Enterprise Chat & Analytics</span>
+              <span class="badge-tech">Flutter &bull; WebSockets</span>
+            </div>
+
+            <h3 class="case-card-title">Core Desk – Workplace Collaboration & Analytics</h3>
+            <p class="case-card-summary">
+              Modern corporate productivity platform providing distributed teams with low-latency messaging, task sprint tracking, velocity indicators, activity logging, and managerial review dashboards.
+            </p>
+
+            <div class="case-highlights-list">
+              <div class="hl-item"><i class="fa-solid fa-circle-check"></i> Real-time channel and direct peer messaging with status indicators.</div>
+              <div class="hl-item"><i class="fa-solid fa-circle-check"></i> Task sprint assignments with deadline reminders and review checkpoints.</div>
+              <div class="hl-item"><i class="fa-solid fa-circle-check"></i> Management analytics exportable for sprint retrospective evaluations.</div>
+            </div>
+
+            <div class="case-card-tags">
+              <span>Flutter</span>
+              <span>WebSockets</span>
+              <span>Real-Time Messaging</span>
+              <span>Productivity Analytics</span>
+            </div>
+          </article>
+
+          <!-- Project 4: Employee Attendance Geo-Fencing -->
+          <article class="case-card" data-category="flutterflow">
+            <div class="case-badge-row">
+              <span class="badge-cat flutterflow"><i class="fa-solid fa-location-crosshairs"></i> Workforce Logistics</span>
+              <span class="badge-tech">FlutterFlow &bull; GPS</span>
+            </div>
+
+            <h3 class="case-card-title">Employee Attendance & Geo-Fencing System</h3>
+            <p class="case-card-summary">
+              Location-verified attendance tracking solution using mobile GPS polygon boundaries to authorize punch-ins, combined with multi-tier leave approval hierarchies and payroll export reporting.
+            </p>
+
+            <div class="case-highlights-list">
+              <div class="hl-item"><i class="fa-solid fa-circle-check"></i> Polygon GPS geo-fencing perimeter bounds preventing proxy clock-ins.</div>
+              <div class="hl-item"><i class="fa-solid fa-circle-check"></i> Multi-level supervisor approval hierarchy for shift adjustments.</div>
+              <div class="hl-item"><i class="fa-solid fa-circle-check"></i> Real-time presence dashboards with monthly payroll attendance exports.</div>
+            </div>
+
+            <div class="case-card-tags">
+              <span>FlutterFlow</span>
+              <span>GPS Geo-Fencing</span>
+              <span>Approval Workflows</span>
+              <span>Cloud Database</span>
+            </div>
+          </article>
+
+          <!-- Project 5: Local Partner E-Commerce & Rental -->
+          <article class="case-card" data-category="flutterflow">
+            <div class="case-badge-row">
+              <span class="badge-cat flutterflow"><i class="fa-solid fa-cart-shopping"></i> Commercial E-Commerce</span>
+              <span class="badge-tech">FlutterFlow &bull; Payments</span>
+            </div>
+
+            <h3 class="case-card-title">Local Partner – E-Commerce & Rental Platform</h3>
+            <p class="case-card-summary">
+              Hybrid commercial platform facilitating outright product purchases as well as multi-tier rental durations (daily, weekly, yearly) with automated billing cycles and calendar-based inventory reservations.
+            </p>
+
+            <div class="case-highlights-list">
+              <div class="hl-item"><i class="fa-solid fa-circle-check"></i> Multi-tier rental options with auto-calculated duration pricing.</div>
+              <div class="hl-item"><i class="fa-solid fa-circle-check"></i> Integrated payment gateway checkout with order tracking.</div>
+              <div class="hl-item"><i class="fa-solid fa-circle-check"></i> Customer portal for rental return schedules and subscription renewal.</div>
+            </div>
+
+            <div class="case-card-tags">
+              <span>FlutterFlow</span>
+              <span>REST APIs</span>
+              <span>Payment Gateways</span>
+              <span>Rental Engine</span>
+            </div>
+          </article>
+
+          <!-- Project 6: Lottery Management & Pooling -->
+          <article class="case-card" data-category="flutterflow">
+            <div class="case-badge-row">
+              <span class="badge-cat flutterflow"><i class="fa-solid fa-ticket"></i> FinTech & Pooling</span>
+              <span class="badge-tech">FlutterFlow &bull; Live Telemetry</span>
+            </div>
+
+            <h3 class="case-card-title">Lottery Management & Pooling Platform</h3>
+            <p class="case-card-summary">
+              Collaborative pool syndication platform enabling participants to collaboratively fund pool tickets, verify real-time draw updates, and automate fractional payout distributions.
+            </p>
+
+            <div class="case-highlights-list">
+              <div class="hl-item"><i class="fa-solid fa-circle-check"></i> Fractional ownership calculations and automated payout disbursement.</div>
+              <div class="hl-item"><i class="fa-solid fa-circle-check"></i> Live updates showing pool funding progress in real time.</div>
+              <div class="hl-item"><i class="fa-solid fa-circle-check"></i> Verified transaction receipts with notification alerts.</div>
+            </div>
+
+            <div class="case-card-tags">
+              <span>FlutterFlow</span>
+              <span>Payment Gateways</span>
+              <span>Live Updates</span>
+              <span>Pooling Engine</span>
+            </div>
+          </article>
+
+          <!-- Project 7: IoT QA & AWS Infrastructure Migration -->
+          <article class="case-card featured-card" data-category="qa iot">
+            <div class="case-badge-row">
+              <span class="badge-cat qa"><i class="fa-solid fa-server"></i> QA Leadership & DevOps</span>
+              <span class="badge-tech">AWS EC2 & S3 &bull; Ubuntu Linux &bull; Embedded QA</span>
+            </div>
+
+            <h3 class="case-card-title">Enterprise IoT Testing & AWS Infrastructure Migration</h3>
+            <p class="case-card-summary">
+              Directed quality assurance for internationally deployed connected systems—validating Broan-NuTone Overture air-quality sensor data triggers and Watkins Wellness smart spa controls. Orchestrated zero-downtime server migration from Windows Server to Ubuntu Linux on AWS EC2 & S3.
+            </p>
+
+            <div class="case-architecture-box">
+              <div class="arch-col">
+                <span class="arch-lbl">Broan-NuTone Overture</span>
+                <span class="arch-val">Tested IoT air-quality sensor threshold triggers & automated ventilation controls</span>
+              </div>
+              <div class="arch-col">
+                <span class="arch-lbl">Watkins Wellness</span>
+                <span class="arch-val">Validated smart spa connected app behaviors, safety alerts & cloud telemetry</span>
+              </div>
+              <div class="arch-col">
+                <span class="arch-lbl">AWS Server Cutover</span>
+                <span class="arch-val">Windows Server to Ubuntu Linux on AWS EC2 with 100% data integrity</span>
+              </div>
+            </div>
+
+            <div class="case-card-tags">
+              <span>AWS EC2 & S3</span>
+              <span>Ubuntu Linux</span>
+              <span>Broan-NuTone Overture</span>
+              <span>Watkins Wellness</span>
+              <span>Postman API QA</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. CAREER EXPERIENCE SECTION -->
+    <section class="section career-section" id="career">
+      <div class="container">
+        <div class="section-tag-group">
+          <span class="section-badge">CAREER TRAJECTORY</span>
+          <h2 class="section-heading">Professional History & Engineering Leadership</h2>
+          <p class="section-intro">A decade of engineering discipline, bridging software development, QA governance, and technical project management.</p>
+        </div>
+
+        <div class="timeline-stream">
+          <!-- Role 1 -->
+          <div class="timeline-card">
+            <div class="timeline-indicator">
+              <div class="indicator-dot"></div>
+              <div class="indicator-line"></div>
+            </div>
+            <div class="timeline-card-content">
+              <div class="timeline-top-bar">
+                <div>
+                  <h3 class="role-title">Lead QA Analyst & Flutter Developer</h3>
+                  <div class="company-name">Dream Filler Software Solutions Pvt. Ltd. &bull; Satna, India</div>
+                </div>
+                <div class="time-badge">Oct 2023 – Present</div>
+              </div>
+              <ul class="timeline-duties">
+                <li>Developed and delivered cross-platform mobile and web client applications with <strong>Flutter, Dart, and FlutterFlow</strong> from initial scoping through store deployment and post-launch maintenance.</li>
+                <li>Implemented mission-critical application integrations: payment gateways, Firebase Cloud Messaging (FCM), real-time messaging, and IoT device connectivity (BLE, Wi-Fi, MQTT).</li>
+                <li>Collaborated on application architecture and delivery pipelines; instituted strict QA practices to catch and eliminate defects prior to production release.</li>
+              </ul>
+              <div class="timeline-tech-tags">
+                <span>Flutter</span>
+                <span>Dart</span>
+                <span>FlutterFlow</span>
+                <span>BLE & IoT</span>
+                <span>REST APIs</span>
+                <span>Firebase FCM</span>
+                <span>QA Leadership</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Role 2 -->
+          <div class="timeline-card">
+            <div class="timeline-indicator">
+              <div class="indicator-dot"></div>
+              <div class="indicator-line"></div>
+            </div>
+            <div class="timeline-card-content">
+              <div class="timeline-top-bar">
+                <div>
+                  <h3 class="role-title">Software Engineer Trainee / QA Analyst</h3>
+                  <div class="company-name">Dream Filler Software Solutions Pvt. Ltd. &bull; Satna, India</div>
+                </div>
+                <div class="time-badge">Oct 2021 – Oct 2023</div>
+              </div>
+              <ul class="timeline-duties">
+                <li>Conducted rigorous functional, integration, regression, and manual testing across mobile, web, and cloud-connected platforms.</li>
+                <li>Documented comprehensive test plans, edge-case scenarios, and root-cause analyses using Zoho Bug Tracker and JIRA.</li>
+                <li>Presented regular client demos, gathered feedback, and collaborated with UI/UX engineers to refine application user flows.</li>
+              </ul>
+              <div class="timeline-tech-tags">
+                <span>Mobile & Web QA</span>
+                <span>Regression Testing</span>
+                <span>Zoho Bug Tracker</span>
+                <span>JIRA</span>
+                <span>Postman API QA</span>
+                <span>Client Demos</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Role 3 -->
+          <div class="timeline-card">
+            <div class="timeline-indicator">
+              <div class="indicator-dot"></div>
+            </div>
+            <div class="timeline-card-content">
+              <div class="timeline-top-bar">
+                <div>
+                  <h3 class="role-title">Solar Project Engineer</h3>
+                  <div class="company-name">Madhav Infra Project Ltd. &bull; Bangalore, India</div>
+                </div>
+                <div class="time-badge">Aug 2014 – Aug 2021</div>
+              </div>
+              <ul class="timeline-duties">
+                <li>Coordinated large-scale project engineering, plant commissioning, cross-functional team management, and strict technical compliance.</li>
+                <li>Maintained on-time delivery schedules, rigorous risk management protocols, and multi-stakeholder operational reporting.</li>
+              </ul>
+              <div class="timeline-tech-tags">
+                <span>Project Engineering</span>
+                <span>Quality Compliance</span>
+                <span>Team Coordination</span>
+                <span>Risk Management</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Academic Accreditation Card -->
+        <div class="academic-strip">
+          <div class="academic-icon-box"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="academic-info">
+            <span class="academic-degree">Bachelor of Engineering (B.E.)</span>
+            <span class="academic-school">Lakshmi Narain College of Technology (LNCT), Jabalpur</span>
+            <span class="academic-year">Graduated: 2010 – 2014 &bull; Engineering Fundamentals & System Design</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. CONTACT & INQUIRY SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-card-box">
+          <div class="contact-left-col">
+            <span class="section-badge">GET IN TOUCH</span>
+            <h2 class="contact-title">Let’s Discuss Your Next Mobile Project</h2>
+            <p class="contact-desc">
+              Whether you are architecting a new Flutter app from the ground up, integrating IoT hardware via BLE/MQTT, or seeking senior QA leadership, I look forward to connecting.
+            </p>
+
+            <div class="contact-links-list">
+              <a href="mailto:akashg092@gmail.com" class="direct-link-card">
+                <div class="link-icon"><i class="fa-regular fa-envelope"></i></div>
+                <div>
+                  <span class="link-label">Direct Email</span>
+                  <span class="link-value">akashg092@gmail.com</span>
+                </div>
+              </a>
+
+              <a href="tel:+918839706795" class="direct-link-card">
+                <div class="link-icon"><i class="fa-solid fa-phone"></i></div>
+                <div>
+                  <span class="link-label">Call / WhatsApp</span>
+                  <span class="link-value">+91 8839706795</span>
+                </div>
+              </a>
+
+              <a href="https://linkedin.com/in/akash-gupta" target="_blank" rel="noopener noreferrer" class="direct-link-card">
+                <div class="link-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                <div>
+                  <span class="link-label">LinkedIn Profile</span>
+                  <span class="link-value">linkedin.com/in/akash-gupta</span>
+                </div>
+              </a>
+
+              <div class="direct-link-card static">
+                <div class="link-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <span class="link-label">Base Location</span>
+                  <span class="link-value">Satna, Madhya Pradesh, India (Open for Remote Worldwide)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-right-col">
+            <div class="form-container">
+              <h3 class="form-heading">Send a Direct Message</h3>
+              <p class="form-subheading">Inquiries receive a response within 24 hours.</p>
+
+              <form id="contactForm" onsubmit="handleFormSubmit(event)">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" placeholder="Sarah Jenkins" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Work Email</label>
+                    <input type="email" id="email" placeholder="sarah@company.com" required />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="subject">Project Scope / Subject</label>
+                  <input type="text" id="subject" placeholder="Flutter App Architecture / IoT Sync" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea id="message" rows="4" placeholder="Brief overview of requirements, timelines, or role description..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">
+                  <i class="fa-regular fa-paper-plane"></i> Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 8. FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div class="footer-left">
+        <span class="footer-brand">Akash Gupta</span>
+        <p class="footer-tagline">Senior Flutter Developer &bull; Mobile Application Architect &bull; IoT Specialist</p>
+      </div>
+
+      <div class="footer-nav">
+        <a href="#about">About</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#projects">Case Studies</a>
+        <a href="#career">Experience</a>
+        <a href="#contact">Contact</a>
+        <a href="Akash_Gupta_Resume.pdf" target="_blank">CV (PDF)</a>
+      </div>
+
+      <div class="footer-copy">
+        &copy; 2026 Akash Gupta. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
