@@ -216,7 +216,7 @@ class _PortfolioWebPageState extends State<PortfolioWebPage> {
 
                     // Resume Download Action
                     ElevatedButton.icon(
-                      onPressed: () => _openUrl('https://linkedin.com/in/akash-gupta'),
+                      onPressed: () => _openUrl('https://www.linkedin.com/in/akash-gupta-abb175111/'),
                       style: ElevatedButton.styleFrom(
                         backgroundColor: primaryColor,
                         foregroundColor: isDark ? const Color(0xFF0D1117) : Colors.white,
@@ -353,7 +353,7 @@ class _PortfolioWebPageState extends State<PortfolioWebPage> {
                           ),
                           const SizedBox(width: 16),
                           TextButton.icon(
-                            onPressed: () => _openUrl('https://linkedin.com/in/akash-gupta'),
+                            onPressed: () => _openUrl('https://www.linkedin.com/in/akash-gupta-abb175111/'),
                             style: TextButton.styleFrom(
                               foregroundColor: textMuted,
                               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 18),
@@ -876,8 +876,8 @@ class _PortfolioWebPageState extends State<PortfolioWebPage> {
                             child: _buildWebContactCard(
                               icon: Icons.link_outlined,
                               label: 'LinkedIn Profile',
-                              value: 'linkedin.com/in/akash-gupta',
-                              onTap: () => _openUrl('https://linkedin.com/in/akash-gupta'),
+                              value: 'linkedin.com/in/akash-gupta-abb175111',
+                              onTap: () => _openUrl('https://www.linkedin.com/in/akash-gupta-abb175111/'),
                               cardBg: cardBg,
                               borderColor: borderColor,
                               primaryColor: primaryColor,

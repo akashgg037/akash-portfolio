@@ -23,3 +23,4 @@ Native Flutter application written in Dart:
 
 ## 🌐 Deploy to Vercel
 This repository is configured with `vercel.json` for zero-configuration deployment on [Vercel](https://vercel.com).
+
