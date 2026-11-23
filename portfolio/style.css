@@ -95,17 +95,9 @@ body {
   overflow-x: hidden;
 }
 
-/* Background Subtle Dot Grid */
+/* Clean Minimal Background */
 .bg-grid-pattern {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  pointer-events: none;
-  background-image: radial-gradient(var(--grid-dot-color) 1px, transparent 1px);
-  background-size: 24px 24px;
-  z-index: 0;
+  display: none;
 }
 
 .container {
@@ -141,11 +133,11 @@ body.theme-dark .highlight-text {
 
 .section-badge {
   display: inline-block;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: none;
   color: var(--accent-flutter);
   background: var(--bg-tag);
   border: 1px solid var(--bg-tag-border);
@@ -374,12 +366,18 @@ body.theme-dark .header-container {
   margin-bottom: 22px;
 }
 
-.pulse-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: var(--accent-emerald);
-  box-shadow: 0 0 10px var(--accent-emerald);
+.eyebrow-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  background: var(--bg-tag);
+  border: 1px solid var(--bg-tag-border);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--accent-flutter);
+  margin-bottom: 22px;
 }
 
 .hero-title {
@@ -436,161 +434,119 @@ body.theme-dark .header-container {
   transform: translateY(-2px);
 }
 
-/* Hero Telemetry Card */
-.telemetry-card {
+/* Profile Overview Card (Human & Editorial) */
+.profile-card-modern {
   background: var(--bg-surface);
   border: 1px solid var(--border-light);
   border-radius: 16px;
+  padding: 26px;
   box-shadow: var(--card-shadow);
-  overflow: hidden;
   transition: var(--transition);
 }
-.telemetry-card:hover {
+.profile-card-modern:hover {
+  border-color: var(--border-medium);
   box-shadow: var(--card-shadow-hover);
-  border-color: var(--border-medium);
 }
 
-.telemetry-header {
-  padding: 14px 20px;
-  background: var(--bg-elevated);
+.pcm-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 18px;
   border-bottom: 1px solid var(--border-light);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
-.card-dots {
-  display: flex;
-  gap: 6px;
-}
-.card-dots .dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-}
-.dot.red { background-color: #ef4444; }
-.dot.yellow { background-color: #f59e0b; }
-.dot.green { background-color: #10b981; }
-
-.telemetry-title {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.78rem;
-  color: var(--text-muted);
-}
-
-.status-chip {
-  font-size: 0.74rem;
-  font-family: 'JetBrains Mono', monospace;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-.status-chip.live {
-  color: var(--accent-emerald);
-}
-
-.telemetry-body {
-  padding: 24px 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.telemetry-node {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  padding: 12px 14px;
-  border-radius: 10px;
-  background: var(--bg-card-subtle);
-  border: 1px solid var(--border-light);
-  transition: var(--transition);
-}
-.telemetry-node:hover {
-  border-color: var(--border-medium);
-  background: var(--bg-elevated);
-}
-
-.node-icon {
-  width: 38px;
-  height: 38px;
-  border-radius: 8px;
+.pcm-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--accent-flutter), #0284c7);
+  color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.1rem;
+  font-weight: 800;
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
   flex-shrink: 0;
 }
-.node-icon.flutter {
-  background: rgba(2, 132, 199, 0.12);
-  color: var(--accent-flutter);
-}
-.node-icon.iot {
-  background: rgba(8, 145, 178, 0.12);
-  color: var(--accent-cyan);
-}
-.node-icon.aws {
-  background: rgba(217, 119, 6, 0.12);
-  color: var(--accent-amber);
-}
-.node-icon.qa {
-  background: rgba(5, 150, 105, 0.12);
-  color: var(--accent-emerald);
+
+.pcm-identity {
+  flex: 1;
 }
 
-.node-content {
-  flex-grow: 1;
-}
-.node-title {
-  font-size: 0.9rem;
+.pcm-name {
+  font-size: 1.2rem;
   font-weight: 700;
   color: var(--text-head);
+  margin-bottom: 2px;
 }
-.node-meta {
-  font-size: 0.76rem;
+
+.pcm-role {
+  font-size: 0.85rem;
   color: var(--text-muted);
-  margin-top: 1px;
+  font-weight: 500;
 }
 
-.node-status {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.72rem;
-  font-weight: 700;
-}
-.text-emerald { color: var(--accent-emerald); }
-.text-cyan { color: var(--accent-cyan); }
-
-.telemetry-footer {
-  padding: 16px 20px;
-  background: var(--bg-elevated);
-  border-top: 1px solid var(--border-light);
+.pcm-details {
+  padding: 18px 0;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  flex-direction: column;
+  gap: 12px;
+  border-bottom: 1px solid var(--border-light);
 }
 
-.stat-mini {
+.pcm-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  font-size: 0.86rem;
+}
+
+.pcm-label {
+  color: var(--text-muted);
+  font-weight: 500;
+  flex-shrink: 0;
+}
+
+.pcm-val {
+  color: var(--text-head);
+  font-weight: 600;
+  text-align: right;
+}
+
+.pcm-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.pcm-stat-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.stat-mini-val {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 1.1rem;
-  font-weight: 800;
-  color: var(--text-head);
-}
-.stat-mini-lbl {
-  font-size: 0.7rem;
-  color: var(--text-muted);
-  text-transform: uppercase;
+  text-align: center;
 }
 
-.stat-mini-divider {
-  width: 1px;
-  height: 28px;
-  background: var(--border-light);
+.pcm-stat-num {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text-head);
+  letter-spacing: -0.02em;
+}
+
+.pcm-stat-label {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+  line-height: 1.3;
+}
+
+.pcm-action {
+  padding-top: 18px;
 }
 
 /* --------------------------------------------------------------------------
@@ -1106,12 +1062,12 @@ body.theme-dark .header-container {
   position: relative;
 }
 .indicator-dot {
-  width: 14px;
-  height: 14px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   background: var(--accent-flutter);
-  border: 3px solid var(--bg-surface);
-  box-shadow: 0 0 10px rgba(2, 132, 199, 0.4);
+  border: 2px solid var(--bg-surface);
+  box-shadow: none;
   margin-top: 8px;
   z-index: 2;
 }
