@@ -1,49 +1,18 @@
 // ==========================================================================
-// Akash Gupta - Senior Engineering Portfolio Scripts
-// Interactive Theme Switcher, Category Filters & Form Dispatcher
+// Akash Gupta - Executive Engineering Portfolio Scripts
+// Interactive Project Filters & Form Dispatcher (Pure Dark Cinematic Mode)
 // ==========================================================================
 
 document.addEventListener('DOMContentLoaded', () => {
-  initThemeToggle();
+  // Clear any legacy theme preference so users always get the cinematic dark aesthetic
+  try {
+    localStorage.removeItem('akash-theme');
+  } catch (e) {}
+
   initProjectFilters();
 });
 
-// 1. Theme Mode Switcher (Light / Dark)
-function initThemeToggle() {
-  const themeBtn = document.getElementById('themeBtn');
-  const themeIcon = document.getElementById('themeIcon');
-  const body = document.body;
-
-  // Retrieve saved preference or default to dark (matching modern mobile portfolio)
-  const savedTheme = localStorage.getItem('akash-theme') || 'theme-dark';
-  applyTheme(savedTheme);
-
-  if (themeBtn) {
-    themeBtn.addEventListener('click', () => {
-      const isCurrentlyDark = body.classList.contains('theme-dark');
-      const nextTheme = isCurrentlyDark ? 'theme-light' : 'theme-dark';
-      applyTheme(nextTheme);
-      localStorage.setItem('akash-theme', nextTheme);
-    });
-  }
-
-  function applyTheme(theme) {
-    body.classList.remove('theme-light', 'theme-dark');
-    body.classList.add(theme);
-
-    if (themeIcon) {
-      if (theme === 'theme-dark') {
-        themeIcon.classList.remove('fa-moon');
-        themeIcon.classList.add('fa-sun');
-      } else {
-        themeIcon.classList.remove('fa-sun');
-        themeIcon.classList.add('fa-moon');
-      }
-    }
-  }
-}
-
-// 2. Interactive Case Study Filtering
+// 1. Interactive Project Filtering
 function initProjectFilters() {
   const filterBtns = document.querySelectorAll('.filter-btn');
   const caseCards = document.querySelectorAll('.case-card');
@@ -67,7 +36,7 @@ function initProjectFilters() {
   });
 }
 
-// 3. Contact Form Submission
+// 2. Contact Form Submission
 function handleFormSubmit(event) {
   event.preventDefault();
 
@@ -93,7 +62,7 @@ function handleFormSubmit(event) {
   document.getElementById('contactForm').reset();
 }
 
-// 4. Toast Notification
+// 3. Toast Notification
 function showToast(message) {
   const toast = document.getElementById('toast');
   if (!toast) return;
