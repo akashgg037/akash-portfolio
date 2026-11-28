@@ -14,8 +14,8 @@ function initThemeToggle() {
   const themeIcon = document.getElementById('themeIcon');
   const body = document.body;
 
-  // Retrieve saved preference or default to light
-  const savedTheme = localStorage.getItem('akash-theme') || 'theme-light';
+  // Retrieve saved preference or default to dark (matching modern mobile portfolio)
+  const savedTheme = localStorage.getItem('akash-theme') || 'theme-dark';
   applyTheme(savedTheme);
 
   if (themeBtn) {

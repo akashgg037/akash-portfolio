@@ -14,8 +14,8 @@ class AkashPortfolioApp extends StatefulWidget {
 }
 
 class _AkashPortfolioAppState extends State<AkashPortfolioApp> {
-  // Theme state: false = Executive Light (Default), true = Midnight Luxury
-  bool _isDarkTheme = false;
+  // Theme state: true = Cinematic Dark (Matching Modern Mobile Portfolio), false = Light
+  bool _isDarkTheme = true;
 
   void _toggleTheme() {
     setState(() {
@@ -41,18 +41,18 @@ class _AkashPortfolioAppState extends State<AkashPortfolioApp> {
       textTheme: GoogleFonts.plusJakartaSansTextTheme(ThemeData.light().textTheme),
     );
 
-    // Midnight Luxury Palette
+    // Cinematic Dark Palette (Ashutosh Design Tokens)
     final darkTheme = ThemeData(
       useMaterial3: true,
       brightness: Brightness.dark,
-      scaffoldBackgroundColor: const Color(0xFF0D1117),
-      primaryColor: const Color(0xFFE2C799),
+      scaffoldBackgroundColor: const Color(0xFF050505),
+      primaryColor: Colors.white,
       colorScheme: const ColorScheme.dark(
-        primary: Color(0xFFE2C799),
-        secondary: Color(0xFFF0F6FC),
-        surface: Color(0xFF161B22),
-        onSurface: Color(0xFFF0F6FC),
-        outline: Color(0xFF30363D),
+        primary: Colors.white,
+        secondary: Color(0xFF53D769),
+        surface: Color(0xFF141414),
+        onSurface: Color(0xFFF1EEE8),
+        outline: Color(0x26FFFFFF),
       ),
       textTheme: GoogleFonts.plusJakartaSansTextTheme(ThemeData.dark().textTheme),
     );
