@@ -1,18 +1,46 @@
 // ==========================================================================
 // Akash Gupta - Executive Engineering Portfolio Scripts
-// Interactive Project Filters & Form Dispatcher (Pure Dark Cinematic Mode)
+// Live IST Clock, Interactive Project Filters & Form Dispatcher
 // ==========================================================================
 
-document.addEventListener('DOMContentLoaded', () => {
-  // Clear any legacy theme preference so users always get the cinematic dark aesthetic
-  try {
-    localStorage.removeItem('akash-theme');
-  } catch (e) {}
+// Ensure strict dark mode (clear any legacy stored theme from older versions)
+try {
+  localStorage.removeItem('akash-theme');
+  localStorage.removeItem('theme');
+  if (document.documentElement) document.documentElement.removeAttribute('data-theme');
+  if (document.body) document.body.classList.remove('theme-light');
+} catch (e) {}
 
+document.addEventListener('DOMContentLoaded', () => {
+  initLiveClock();
   initProjectFilters();
 });
 
-// 1. Interactive Project Filtering
+// 1. Real-Time IST Digital Clock (UTC +5:30)
+function initLiveClock() {
+  const clockEl = document.getElementById('liveClock');
+  if (!clockEl) return;
+
+  function updateTime() {
+    const now = new Date();
+    const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
+    const ist = new Date(utc + (3600000 * 5.5));
+
+    let hours = ist.getHours();
+    const minutes = String(ist.getMinutes()).padStart(2, '0');
+    const seconds = String(ist.getSeconds()).padStart(2, '0');
+    const ampm = hours >= 12 ? 'PM' : 'AM';
+    hours = hours % 12 || 12;
+    const strHours = String(hours).padStart(2, '0');
+
+    clockEl.textContent = `${strHours}:${minutes}:${seconds} ${ampm} IST`;
+  }
+
+  updateTime();
+  setInterval(updateTime, 1000);
+}
+
+// 2. Interactive Project Filtering
 function initProjectFilters() {
   const filterBtns = document.querySelectorAll('.filter-btn');
   const caseCards = document.querySelectorAll('.case-card');
@@ -36,7 +64,7 @@ function initProjectFilters() {
   });
 }
 
-// 2. Contact Form Submission
+// 3. Contact Form Submission
 function handleFormSubmit(event) {
   event.preventDefault();
 
@@ -62,7 +90,7 @@ function handleFormSubmit(event) {
   document.getElementById('contactForm').reset();
 }
 
-// 3. Toast Notification
+// 4. Toast Notification
 function showToast(message) {
   const toast = document.getElementById('toast');
   if (!toast) return;
